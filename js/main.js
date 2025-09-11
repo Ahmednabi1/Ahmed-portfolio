@@ -1,13 +1,12 @@
-        // Project image management
-        const projectImages = [
-            [0, 1, 2], // Project 1 images
-            [0, 1, 2], // Project 2 images  
-            [0, 1, 2], // Project 3 images
-            [0, 1, 2]  // Project 4 images
-        ];
+        // // Project image management
+        // const projectImages = [
+        //     [0, 1, 2], // Project 1 images
+        //     [0, 1, 2], // Project 2 images  
+        //     [0, 1, 2], // Project 3 images
+        //     [0, 1, 2]  // Project 4 images
+        // ];
 
-        let currentImageIndex = [0, 0, 0, 0];
-
+        let currentImageIndex = [0, 0, 0, 0, 0, 0, 0]; // Track current image index for each project
         function nextImage(projectIndex) {
             const images = document.querySelectorAll(`.project-card:nth-child(${projectIndex + 1}) .project-image`);
             images[currentImageIndex[projectIndex]].classList.remove('active');
